@@ -11,6 +11,16 @@ const App = () => {
         </h1>
           <Menu/>
       </header>
+
+      <main>
+        <Image/>
+        <Resume/>
+        <Projects/>
+      </main>
+
+      <footer>
+        <Footer/>
+      </footer>
       
     </div>    
   );
