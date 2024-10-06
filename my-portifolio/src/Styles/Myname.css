@@ -1,0 +1,7 @@
+.myname {
+    position:fixed;
+    top: 0;
+    left: 20px;
+    display: flex;
+    color: rgb(219, 116, 136);;
+}

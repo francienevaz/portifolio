@@ -1,0 +1,17 @@
+.projects {
+    display: flex;
+    min-width: 100vw;
+    height: 50vh;
+    background-color: rgb(47, 40, 40);
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    margin: 20px;
+    padding: 20px;
+    background-color: #282c34;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}

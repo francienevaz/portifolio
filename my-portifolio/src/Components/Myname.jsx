@@ -1,11 +1,12 @@
 import React from "react";
 import Typewriter from 'typewriter-effect';
+import '../Styles/Myname.css'
 
 const Myname = () => {
     const name = "< Franciene Vaz />";
 
     return(
-        <div>
+        <div className="myname">
             <Typewriter
                 options={{
                     autoStart: true,

@@ -1,21 +1,23 @@
 import './App.css';
 import Myname from './Components/Myname';
 import Menu from './Components/Menu';
+import Image from './Components/Image';
+import Resume from './Components/Resume';
+import Projects from './Components/Projects';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
-    <div>
-      <header>
-        <h1>
-          <Myname/>
-        </h1>
+    <div className='App'>
+      <header className='App-header'>
+          <Myname/>        
           <Menu/>
       </header>
 
-      <main>
-        <Image/>
+      <main className='main'>
         <Resume/>
-        <Projects/>
+        <Image/>
+        <Projects/>        
       </main>
 
       <footer>
