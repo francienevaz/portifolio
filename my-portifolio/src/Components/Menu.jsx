@@ -3,7 +3,19 @@ import '../Styles/Menu.css'
 
 const Menu = () => {
     return(
+
+        <>
             <nav className='menu'>
+                <div class="wrapper">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="toggle" id="toggle"/>
+                        <label for="toggle" class="checkbox">
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                        </label>
+                    </div>
+                </div>
                 <ul className='menu-list'>
                     <li>Home</li>
                     <li>About Us</li>
@@ -11,7 +23,7 @@ const Menu = () => {
                     <li>Contact me</li>
                 </ul>
             </nav>                
-
+        </>
     )
 }
 

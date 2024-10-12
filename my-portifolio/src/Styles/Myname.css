@@ -3,5 +3,6 @@
     top: 0;
     left: 20px;
     display: flex;
-    color: rgb(219, 116, 136);;
+    color: rgb(219, 116, 136);
+    font-weight: bold;
 }
