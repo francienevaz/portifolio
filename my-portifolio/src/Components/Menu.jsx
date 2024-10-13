@@ -1,30 +1,37 @@
-import React from 'react'
-import '../Styles/Menu.css'
+import React, { useState } from 'react';
+import '../Styles/Menu.css';
 
 const Menu = () => {
-    return(
+    const [isVisibleMenu, setIsVisibleMenu] = useState(false);
 
-        <>
-            <nav className='menu'>
-                <div class="wrapper">
-                    <div class="checkbox-wrapper">
-                        <input type="checkbox" name="toggle" id="toggle"/>
-                        <label for="toggle" class="checkbox">
-                            <div class="trace"></div>
-                            <div class="trace"></div>
-                            <div class="trace"></div>
-                        </label>
-                    </div>
+    const toggleMenu = () => {
+        console.log("Just clicked!");
+        setIsVisibleMenu(!isVisibleMenu);
+    }
+
+    return (
+        <nav className='menu'>
+            <div className="wrapper">
+                <div className="checkbox-wrapper">
+                    <input type="checkbox" name="toggle" id="toggle"/>
+                    <label htmlFor="toggle" className="checkbox" onClick={toggleMenu}>
+                        <div className="trace"></div>
+                        <div className="trace"></div>
+                        <div className="trace"></div>
+                    </label>
                 </div>
+            </div>
+
+            {isVisibleMenu && (
                 <ul className='menu-list'>
                     <li>Home</li>
                     <li>About Us</li>
                     <li>My Projects</li>
                     <li>Contact me</li>
                 </ul>
-            </nav>                
-        </>
-    )
+            )}
+        </nav>
+    );
 }
 
 export default Menu;

@@ -5,8 +5,8 @@ const Nav = () => {
     return(
 
         <div className="App-header">
-            <Myname />
             <Menu />
+            <Myname />
         </div>
     )
 }

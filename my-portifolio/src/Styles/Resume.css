@@ -1,5 +1,8 @@
 .resume {
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 50px 50px;
+    padding: 50px;
+    text-align: justify;
 }
